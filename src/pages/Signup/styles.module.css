@@ -9,7 +9,7 @@
 }
 
 .signup_form_container {
-	width: 900px;
+	width: 1000px;
 	height: 500px;
 	display: flex;
 	border-radius: 10px;
@@ -42,7 +42,7 @@
 	align-items: center;
 	justify-content: center;
 	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 20px;
 }
 
 .form_container {
@@ -95,7 +95,7 @@
 	width: 117px;
 	height: 40px;
 	left: calc(50% - 110px/2 - 4.5px);
-	top: calc(50% - 28px/2 + 280px);
+	top: calc(50% - 28px/2 + 260px);
 	background: rgba(0, 0, 0, 0.35);
 	border-radius: 10px; 
 	color: white;
@@ -108,7 +108,7 @@
 	width: 117px;
 	height: 40px;
 	left: calc(50% - 110px/2 - 4.5px);
-	top: calc(50% - 0px/2 + 215px);
+	top: calc(50% - 0px/2 + 200px);
 	color: white;
 	background: rgba(0, 0, 0, 0.35);
 	border-radius: 10px;

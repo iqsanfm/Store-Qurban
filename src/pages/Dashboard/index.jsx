@@ -10,8 +10,7 @@ const Dashboard = () => {
     
     <div className={styles.container}>
 			<div className={styles.main_container}>
-			<Navbar/>
-			
+      <Navbar/>
 			<div className={styles.dashboard}>
 				<h1>hello welcome to QBN Store </h1>
         <div className={styles.login}>

@@ -1,13 +1,16 @@
+// eslint-disable-next-line no-undef
 const Qbn = artifacts.require('../contracts/Qbn.sol');
+// eslint-disable-next-line no-undef
 const PaymentProcessor = artifacts.require('../contracts/PaymentProcessor.sol');
 
 
 module.exports = async function (deployer, network, addresses) {
-  const [admin, payer, _] = addresses;
+  const [admin, payer, ] = addresses;
 
-  if(network === 'develop' || network === 'development') {
+  if(network === 'goerli' || network === 'goerli') {
       await deployer.deploy(Qbn);
       const qbn = await Qbn.deployed();
+      // eslint-disable-next-line no-undef
       await qbn.faucet(payer, web3.utils.toWei('10000'));
 
       await deployer.deploy(PaymentProcessor, admin, qbn.address);

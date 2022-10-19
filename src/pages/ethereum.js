@@ -9,6 +9,7 @@ const getBlockchain = () =>
                 await window.ethereum.enable();
                 const provider = new ethers.providers.Web3Provider(window.ethereum);
                 const signer = provider.getSigner();
+                // eslint-disable-next-line no-unused-vars
                 const signerAddress = await signer.getAddress();
 
                 const paymentProcessor = new Contract(

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e641e3d5-3229-4e4a-84b8-b1f52a6e6042/AppServices/subscriptions/e641e3d5-3229-4e4a-84b8-b1f52a6e6042/resourceGroups/kurbanstore/providers/Microsoft.Web/sites/storequrban",
+    "appService.deploySubpath": "."
+}

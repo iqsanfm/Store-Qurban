@@ -15,13 +15,13 @@ const API_URL = 'http://localhost:4000';
 const ITEMS = [
     {
         id: 1,
-        price: ethers.utils.parseEther('100')
+        price: ethers.utils.parseEther('1')
 
     },
 
     {
         id: 2,
-        price: ethers.utils.parseEther('200')
+        price: ethers.utils.parseEther('2')
 
     },
 
@@ -36,7 +36,7 @@ function Store({ paymentProcessor, qbn }) {
 
         const tx1 = await qbn.approve(paymentProcessor.address, item.price );
         await tx1.wait();
-        
+        console.error();
         // const tx2 = await paymentProcessor.pay(item.price, response1.data.paymentId);
         // const receipt = await tx2.wait();
         
