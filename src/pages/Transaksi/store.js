@@ -5,8 +5,8 @@ import { ethers } from 'ethers';
 import './store.css';
 import axios from 'axios';
 import {useNavigate, Link} from 'react-router-dom';
-import Sapi1 from "../../assets/Images/sapi1.png";
-import Sapi2 from "../../assets/Images/sapi2.png";
+import Sapi1 from "../../assets/Images/sapihitam.png";
+import Sapi2 from "../../assets/Images/sapiputih.png";
 import Logo from "../../assets/Images/logo.png";
 import Card from "react-bootstrap/Card";
 
@@ -15,13 +15,13 @@ const API_URL = 'http://localhost:4000';
 const ITEMS = [
     {
         id: 1,
-        price: ethers.utils.parseEther('1')
+        price: ethers.utils.parseEther('100')
 
     },
 
     {
         id: 2,
-        price: ethers.utils.parseEther('2')
+        price: ethers.utils.parseEther('200')
 
     },
 
@@ -50,9 +50,6 @@ function Store({ paymentProcessor, qbn }) {
 	const navigateToTransaksi = () =>{
 		navigate('/transaksi')
 	};
-	const navigateToProfile = () =>{
-		navigate('/profile')
-	}
 	const navigateHome = () =>{
 		navigate('/')
 	};
@@ -72,16 +69,12 @@ function Store({ paymentProcessor, qbn }) {
 				<button className='white_home' onClick={navigateHome}>
 					Home
 				</button>
-				<button className='white_profile' onClick={navigateToProfile}>
-					Profile 
-				</button>
-			
 				</ul>
 			</nav>
         <div clasName='container1'>
             <div className='card1'>
          <Card className='cardcontainer' style={{width:'18rem'}}> 
-         <Card.Img src={Sapi1} height={225} width={199} />
+         <Card.Img src={Sapi1} height={215} width={190} />
          <Card.Body>
          <Card.Title>Sapi Gendong</Card.Title>
             <Card.Text>
@@ -96,7 +89,7 @@ function Store({ paymentProcessor, qbn }) {
             
          <div className='card2'>
          <Card className='cardcontainer' style={{width:'18rem'}}> 
-         <Card.Img src={Sapi2} height={225} width={199} />
+         <Card.Img src={Sapi2} height={215} width={190} />
          <Card.Body>
          <Card.Title>Sapi Lucu</Card.Title>
             <Card.Text>

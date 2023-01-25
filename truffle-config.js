@@ -45,7 +45,7 @@ module.exports = {
     development: {
     host: "127.0.0.1",     // Localhost (default: none)
     port: "9545",            // Standard Ethereum port (default: none)
-    network_id: "*",       // Any network (default: none)
+    network_id: "5777",       // Any network (default: none)
     },
     // Another network with more advanced options...
     // advanced: {
@@ -58,13 +58,14 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    goerli: {
-    provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/11d4ea98cb4c4803a786edd29e6272b9`),
+    sepolia: {
+    provider: () => new HDWalletProvider(mnemonic, `wss://sepolia.infura.io/ws/v3/9429ecdda2824b629fedefbde7e348e2`),
     // from : "0x23Aa628b5048a60F7A2A37b639F536330833Fa2b",
-    network_id: 5,       // Ropsten's id
-    gas: 5500000,        // Ropsten has a lower block limit than mainnet
-    // gasPrice: 50000000000,
+    network_id: 11155111,       // Ropsten's id
+    //gas: 5500000,        // Ropsten has a lower block limit than mainnet
+    gasPrice: 300000000,
     confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+    //networkCheckTimeout: 10000,
     timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },

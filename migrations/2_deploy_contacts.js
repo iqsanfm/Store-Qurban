@@ -7,7 +7,7 @@ const PaymentProcessor = artifacts.require('../contracts/PaymentProcessor.sol');
 module.exports = async function (deployer, network, addresses) {
   const [admin, payer, ] = addresses;
 
-  if(network === 'goerli' || network === 'goerli') {
+  if(network === 'sepolia' || network === 'sepolia') {
       await deployer.deploy(Qbn);
       const qbn = await Qbn.deployed();
       // eslint-disable-next-line no-undef

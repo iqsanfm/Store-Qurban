@@ -13,9 +13,6 @@ const Main = () => {
 	const navigateToTransaksi = () =>{
 		navigate('/transaksi')
 	};
-	const navigateToProfile = () =>{
-		navigate('/profile')
-	}
 	const navigateHome = () =>{
 		navigate('/')
 	};
@@ -32,14 +29,12 @@ const Main = () => {
       			</Link>
 				
 				  <ul>
+					
 				<button className={styles.white_transaksi} onClick={navigateToTransaksi}>
 					Transaksi
 				</button>
 				<button className={styles.white_home} onClick={navigateHome}>
 					Home
-				</button>
-				<button className={styles.white_profile} onClick={navigateToProfile}>
-					Profile 
 				</button>
 				<button className={styles.white_logout} onClick={handleLogout}>
 					Logout
